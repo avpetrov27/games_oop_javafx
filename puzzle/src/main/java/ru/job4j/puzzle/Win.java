@@ -24,9 +24,6 @@ public class Win {
             if (board[i][i] == 1 && (monoHorizontal(board, i) || monoVertical(board, i))) {
                 return true;
             }
-            if (board[i][i] == 1 && !(monoHorizontal(board, i) || monoVertical(board, i))) {
-                return false;
-            }
         }
         return false;
     }
